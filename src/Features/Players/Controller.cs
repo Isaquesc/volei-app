@@ -4,26 +4,26 @@ using volei_app.Features.Players.Services;
 namespace volei_app.Features.Players;
 
 [ApiController]
-[Route("api/[controller]")]
-public class PlayersController : ControllerBase
+[Route("api/players")]
+public class Controller : ControllerBase
 {
-    private readonly IPlayerService _playerService;
+    private readonly IPlayerUseCase _playerUseCase;
 
-    public PlayersController(IPlayerService playerService)
+    public Controller(IPlayerUseCase playerUseCase)
     {
-        _playerService = playerService;
+        _playerUseCase = playerUseCase;
     }
     
     [HttpGet]
     public IActionResult get()
     {
-        return Ok(_playerService.GetPlayers());
+        return Ok(_playerUseCase.GetPlayers());
     }
     
     [HttpPost("confirm")]
     public async Task<IActionResult> Confirm([FromBody] ConfirmPlayerRequestDto request)
     {
-        var result = await _playerService.ConfirmPresence(request.Name);
+        var result = await _playerUseCase.ConfirmPresence(request.Name);
 
         if (result.Contains("sucesso"))
         {

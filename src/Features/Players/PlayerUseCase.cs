@@ -4,12 +4,12 @@ using volei_app.Features.Players.Models;
 using volei_app.Features.Players.Repositories;
 namespace volei_app.Features.Players.Services;
 
-public class PlayerService : IPlayerService
+public class PlayerUseCase : IPlayerUseCase
 {
     private readonly IPlayerRepository _playerRepository;
     private readonly IHubContext<VoleiHub> _hubContext;
 
-    public PlayerService(IPlayerRepository playerRepository, IHubContext<VoleiHub> hubContext)
+    public PlayerUseCase(IPlayerRepository playerRepository, IHubContext<VoleiHub> hubContext)
     {
         _playerRepository = playerRepository;
         _hubContext = hubContext;

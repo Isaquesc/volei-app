@@ -16,7 +16,7 @@ builder.Services.AddSignalR();
 // Injeção de dependências para o padrão de repositório e serviço.
 // Aqui, registramos as interfaces e suas implementações concretas da feature Players.
 builder.Services.AddSingleton<IPlayerRepository, PlayerRepository>();
-builder.Services.AddScoped<IPlayerService, PlayerService>();
+builder.Services.AddScoped<IPlayerUseCase, PlayerUseCase>();
 
 // Adiciona o FluentValidation para validação, buscando validadores na aplicação inteira.
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
