@@ -34,3 +34,7 @@
 /Users/isaquesilva/Documents/projeto-pessoal/volei-app/obj/Debug/net9.0/volei-app.pdb
 /Users/isaquesilva/Documents/projeto-pessoal/volei-app/obj/Debug/net9.0/volei-app.genruntimeconfig.cache
 /Users/isaquesilva/Documents/projeto-pessoal/volei-app/obj/Debug/net9.0/ref/volei-app.dll
+/Users/isaquesilva/Documents/projeto-pessoal/volei-app/obj/Debug/net9.0/volei-app.sourcelink.json
+/Users/isaquesilva/Documents/projeto-pessoal/volei-app/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/isaquesilva/Documents/projeto-pessoal/volei-app/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/isaquesilva/Documents/projeto-pessoal/volei-app/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
